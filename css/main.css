@@ -1,0 +1,39 @@
+/* Inserta tu código aqui */
+/* {
+	outline: 1px solid rgba(0,0,250,.3)
+}*/
+
+ul {
+	list-style-type: none;
+	padding: 0
+}
+
+a {
+	text-decoration: none;	
+	color: inherit;
+}
+a:hover {
+	text-decoration: none;
+}
+
+/*--------------Clases generales--------------*/
+.text-negrita {
+	font-weight: bold;
+}
+
+
+/*--------------Footer--------------*/
+footer {
+	padding: 
+}
+
+footer .list-nav {
+	border-top: 5px solid #555;
+}
+ footer .list-nav>li {
+ 	display: block;
+ 	min-width: 20%;
+ 	float: left;
+} footer .sublist-nav .glyphicon {
+	padding-right: 10px; /*revisar*/
+} 
