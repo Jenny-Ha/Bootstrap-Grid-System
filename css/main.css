@@ -1,7 +1,11 @@
-* {
+/* {
 	outline: 1px solid rgba(0,0,250,.3)
 }
 /**/
+body {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 12px;
+}
 ul {
 	list-style-type: none;
 	padding: 0;
@@ -23,7 +27,7 @@ h3>span {
 	color: #fff;
 	background-color: #999;
 	padding: 1%;
-	width: 225px;
+	width: 240px;
 	border: 1px solid #d4d4d4;
 }
 hr {
@@ -62,20 +66,36 @@ hr {
 /*--------------Header--------------*/
 
 .encabezado .enlaces-encabezado {
-	margin-top: 5%
+	margin-top: 6%
+}
+.enlaces-encabezado .enlaces-derecha li {
+	padding-left: 15px;
+	margin-right: 15px;
+	
 }
 .enlaces-encabezado .enlaces-derecha li:last-child {
-	border-left:2px solid #333;
+	border-left:3px solid #333;
 }
+
 header .navegacion{
 	padding-top: 4%;
 }
+
 header .navbar-default, header .navbar {
     background-color: transparent;
     border:none;
 }
+header .navbar {
+	min-height: 40px;
+}
+.navbar-default .navbar-collapse {
+	padding: 0;
+}
+
 /*color predeterminado de links NO ACTIVOS*/
 	.navbar-default .navbar-nav>li>a {
+    	padding: 10px 15px;
+    	font-size: 11px;
     	color: #333;
     	font-weight: bold;
     	-webkit-transition: all .25s;
@@ -106,6 +126,10 @@ header .navbar-default, header .navbar {
 	
 	margin-top: 4%;
 }
+/*--------------Contenido--------------*/
+.Contenido {
+	margin-bottom: 1%;
+}
 
 /*--------------columna 1--------------*/
 .dato-articulo span:first-child{
@@ -123,6 +147,9 @@ header .navbar-default, header .navbar {
 	color: #fff;
 	padding: 3px 30px;
 	margin-right: 25px;
+}
+span.webzone {
+	display: inline-block;
 }
 .columna-1 .nota-02 .dato-articulo {
 	display: inline-block;
@@ -162,7 +189,7 @@ header .navbar-default, header .navbar {
 	padding-bottom: 3% ;
 	text-align: center;
 	font-weight: bold;
-	font-size: 20px;
+	font-size: 16px;
 }
 .agenda .agenda-descripcion>h4, 
 .agenda .agenda-descripcion>p {
@@ -179,7 +206,8 @@ header .navbar-default, header .navbar {
 
 /*--------------Footer--------------*/
 footer {
-	padding: 
+	padding-bottom: 1%;
+	margin-bottom: 1%;
 }
 
 footer .list-nav {
@@ -194,7 +222,23 @@ footer .list-nav {
 footer .sublist-nav .glyphicon {
 	padding-right: 10px; /*revisar*/
 } 
-
-span.webzone {
-	display: inline-block;
+/*------------------Media Queries-------------------*/
+@media screen and (max-width: 991px) {
+	header .enlaces-encabezado .enlaces-derecha li:last-child,
+	.Contenido .columna-3, footer .list-nav li:nth-child(2){
+		display: none;
+	}
+	footer .list-nav>li {
+ 		min-width: 25%;
+	}
+}
+@media screen and (min-width: 768px) {
+	header .navbar-default .container-fluid{
+	padding: 0;
+	}
+}
+@media screen and (max-width: 767px) {
+	footer .list-nav>li {
+ 		min-width: 50%;
+	}
 }
