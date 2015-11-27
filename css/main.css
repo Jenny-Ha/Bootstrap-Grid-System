@@ -137,11 +137,11 @@ header .navbar-default, header .navbar {
 	width: 100%;
 }
 
-.agenda .nota-agenda .agenda-fecha {
-	display: table-cell;
-	vertical-align: middle;	
-	padding: 50% auto;
+.mas-informacion .nota-Info>h4 {
+	margin-top: 2px;
+	margin-bottom: 2px;
 }
+
 
 /*--------------columna 3--------------*/
 .columna-3 .lista-Info .sublista-nav {
@@ -150,9 +150,10 @@ header .navbar-default, header .navbar {
 .columna-3 .magazine {
 	margin-bottom: 10px;
 }
-.columna3 .mas-informacion .nota-Info h4{
-	margin-top: 0px;
-	margin-bottom: 0px;
+.agenda .nota-agenda .agenda-fecha {
+	display: table-cell;
+	vertical-align: middle;	
+	padding: 50% auto;
 }
 /*--------------Footer--------------*/
 footer {
