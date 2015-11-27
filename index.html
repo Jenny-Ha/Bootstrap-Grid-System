@@ -21,23 +21,26 @@
   <header class="container-fluid">
    <!--Inicio Encabezado-->
      <div class="encabezado">
-        <h1>Site name</h1>
-        <div class="enlaces-encabezado">
-          <ul>
+        <h1 class="site-name">Site name</h1>
+        <div class="enlaces-encabezado pull-right">
+          <ul >
             <li>
               <a href="#"><span class="glyphicon glyphicon-home"></span>Noticias</a>
             </li>
             <li>
               <a href="#"><span class="glyphicon glyphicon-home"></span>Enlaces RSS</a>
             </li>
+            <li>
+              <form class="form-inline">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="palabraBuscar" placeholder="Ingresar tu búsqueda" style="height=16px;">
+                </div>
+                <button type="submit" class="btn ">Buscar</button>
+              </form>
+            </li>
           </ul>
-          <form class="navbar-form" role="search">
-            <div class="form-group">
-              <input type="text" class="form-control" placeholder="Ingresa tu búsqueda">
-            </div>
-            <button type="submit" class="btn btn-default">Buscar</button>
-          </form>
-        </div>
+        </div><!--fin enlaces-encabezado-->
+        </h1>
      </div><!--fin encabezado-->
     
     <!--...............Inicio Navegación..............-->
@@ -79,24 +82,30 @@
       <!--..........Inicio columna uno..........-->
         <div class="col-sm-5">
           <div class="columna-1">
-            <h3>Historia destacada</h3>
+            <h3><span>Historia destacada</span></h3>
             <div class="nota-01">
-              <ul>
-                <li>Artículo</li>
-                <li>Publicado el 26/11/15</li>
-              </ul>
+                <ul class="dato-articulo list-inline">
+                  <li>Artículo</li>
+                  <li>Publicado el 26/11/15</li>
+                </ul>
               <h4>Lorem ipsum et dilligat gentris</h4>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum animi cumque error aut, voluptate illum eligendi eius cum facilis facere sint earum, culpa quae ratione pariatur. Maiores totam iure nulla. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
               <div class="referencias">
-                <span class="glyphicon glyphicon-bookmark"></span><a href="#" class="ver-mas">Ver más</a>
-                <span class="glyphicon glyphicon-tag"></span><label for="">Etiquetas:</label><a href="#"> lorem</a> <a href="#">ipsum</a> <a href="#">dilligat</a>
+                <ul class="list-inline">
+                  <li>
+                    <span class="glyphicon glyphicon-bookmark"></span><a href="#" class="ver-mas">Ver más...</a>
+                  </li>
+                  <li>
+                     <span class="glyphicon glyphicon-tag"></span><label for="">Etiquetas:</label><a href="#"> lorem</a> <a href="#">ipsum</a> <a href="#">dilligat</a>
+                  </li>
+                </ul>
               </div>
             </div><!--fin nota-01-->
-
+            <hr></hr>
             <div class="nota-02">
-              <span><a href="#">Webzone</a></span>
-              <ul>
-                <li>Preguntas</li>
+              <span><a href="#" class="webzone">Webzone</a></span>
+              <ul class="list-inline">
+                <li><a href="#">Preguntas</a></li>
                 <li>Publicado el 26/11/15</li>
               </ul>
               <h4>Lorem ipsum et dilligat gentris</h4>
@@ -106,7 +115,7 @@
                 <span class="glyphicon glyphicon-tag"></span><label for="">Etiquetas:</label><a href="#"> lorem</a> <a href="#">ipsum</a> <a href="#">dilligat</a>
               </div>
             </div><!--fin nota-02-->
-
+            <hr></hr>
             <div class="nota-03">
               <ul>
                 <li>Artículo</li>
@@ -120,6 +129,7 @@
                 <span class="glyphicon glyphicon-tag"></span><label for="">Etiquetas:</label><a href="#"> lorem</a> <a href="#">ipsum</a> <a href="#">dilligat</a>
               </div>
             </div><!--fin nota-03-->
+            <hr></hr>
             <div class="nota-04">
               <h4>Lorem ipsum et dilligat gentris</h4>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum animi cumque error aut, voluptate illum eligendi eius cum facilis facere sint earum, culpa quae ratione pariatur. Maiores totam iure nulla. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
@@ -134,55 +144,57 @@
         <div class="col-sm-4">
           <div class="columna-2">
 
-            <div class="nota-video">
-              <h3>Historia destacada</h3>
-              <div>Video</div>
-              <h4>Claire Dupond</h4>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae distinctio, quos, officia, voluptatem, est veritatis nihil praesentium illum necessitatibus non doloribus mollitia sequi! Ducimus natus dolorem sunt quis. Explicabo, reprehenderit.</p>
-              <p class="nota-info">
-              <span>Publicado el 26/11/15</span>
-              <span class="glyphicon glyphicon-bookmark"></span><a href="#" class="ver-mas">Ver más</a> 
-              </p>
+            <div class="nota-video row">
+              <div class="col-sm-12">
+                <h3><span>Historia destacada</span></h3>
+                <div class="video"><img src="img/reproductor-video.png" alt="reproductor de video"></div>
+                <h4>Claire Dupond</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae distinctio, quos, officia, voluptatem, est veritatis nihil praesentium illum necessitatibus non doloribus mollitia sequi! Ducimus natus dolorem sunt quis. Explicabo, reprehenderit.</p>
+                <p class="nota-info">
+                <span>Publicado el 26/11/15</span>
+                <span class="glyphicon glyphicon-bookmark"></span><a href="#" class="ver-mas">Ver más</a> 
+                </p>
+              </div>
             </div> <!--fin nota-video-->
             
             <div class="agenda">
               
-              <h3>Agenda</h3>
-              <div class="nota-agenda-01">
+              <h3><span>Agenda</span></h3>
+              <div class="nota-agenda">
                 <div class="agenda-fecha">23 Enero</div>
                 <div class="agenda-descripcion">
                   <h4>Lorem ipsum et diigat</h4>
                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
                   <p>De 23 a 28 de diciembre de 2015</p>
                 </div>
-              </div><!--fin Nota-agenda-01-->
-              <div class="nota-agenda-02">
+              </div><!--fin Nota-agenda-->
+              <div class="nota-agenda">
                 <div class="agenda-fecha">23 Enero</div>
                 <div class="agenda-descripcion">
                   <h4>Lorem ipsum et diigat</h4>
                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
                   <p>De 23 a 28 de diciembre de 2015</p>
                 </div>
-              </div><!--fin Nota-agenda-02-->
+              </div><!--fin Nota-agenda-->
             
-              <div class="nota-agenda-03">
+              <div class="nota-agenda">
                 <div class="agenda-fecha">23 Enero</div>
                 <div class="agenda-descripcion">
                   <h4>Lorem ipsum et diigat</h4>
                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
                   <p>De 23 a 28 de diciembre de 2015</p>
                 </div>
-              </div><!--fin Nota-agenda-03-->
-              <div class="nota-agenda-04">
+              </div><!--fin Nota-agenda-->
+              <div class="nota-agenda">
                 <div class="agenda-fecha">23 Enero</div>
                 <div class="agenda-descripcion">
                   <h4>Lorem ipsum et diigat</h4>
                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
                   <p>De 23 a 28 de diciembre de 2015</p>
                 </div>
-              </div><!--fin Nota-agenda-04-->
+              </div><!--fin Nota-agenda-->
             </div><!--fin agenda-->
-          
+            <hr></hr>
             <div class="mas-informacion">
                <div class="nota-masInfo">
                   <h3>Más información</h3>
@@ -203,15 +215,40 @@
       <!--..........Inicio columna tres..........-->
         <div class="col-sm-3">
           <div class="columna-3">
-            <h3>Historia destacada</h3>
-            <ul>
-              <li>Artículo</li>
-              <li>Publicado el 26/11/15</li>
-            </ul>
-          
-          </div>
+            <div class="">
+                 <h3>Más información</h3>
+                 <ul class="sublista-nav">
+                    <li><a href="#"><span class="glyphicon glyphicon-bookmark"></span>Finanzas y fiscalización</a></li>
+                    <li><a href="#"><span class="glyphicon glyphicon-bookmark"></span>Inversión y equipos</a></li>
+                    <li><a href="#"><span class="glyphicon glyphicon-bookmark"></span>Medio ambiente</a></li>
+                    <li><a href="#"><span class="glyphicon glyphicon-bookmark"></span>Habitad / Urbanismo</a></li>
+                    <li><a href="#"><span class="glyphicon glyphicon-bookmark"></span>Sanidad</a></li>
+                    <li><a href="#"><span class="glyphicon glyphicon-bookmark"></span>Social / Servicios </a></li>
+                    <li><a href="#"><span class="glyphicon glyphicon-bookmark"></span>Transporte</a></li> 
+                 </ul>
+            </div>
+            <hr></hr>
+            <div class="magazine">
+                <h4>MAGAZINE</h4>
+                <h4><b>ECODEFI</b></h4>
+               <p>ENQUETE<br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci totam blanditiis hic doloribus nobis porro, sit impedit repellendus aliquam optio? Libero, harum nihil, incidunt voluptatum similique aliquam sapiente ab quisquam!</p>
+                <p>PREGUNTAS<br>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div><!--fin Magazine-->
+
+            <div class="magazine">
+                <h4>MAGAZINE</h4>
+                <h4><b>ACCIONES COMUNES</b></h4>
+                <p>ENQUETE<br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci totam blanditiis hic doloribus nobis porro, sit impedit repellendus aliquam optio? Libero, harum nihil, incidunt voluptatum similique aliquam sapiente ab quisquam!</p>
+                <p>PREGUNTAS<br>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div><!--fin Magazine-->
+            
+            <div>
+                <b>Nueva geberación de la internet</b>
+            </div>
+
+          </div> <!--fin columna-3-->
         </div>
-      </div>
+      </div> <!--fin row-->
   </div>
 
   <footer class="container-fluid">

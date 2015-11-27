@@ -1,11 +1,11 @@
-/* Inserta tu código aqui */
-/* {
+* {
 	outline: 1px solid rgba(0,0,250,.3)
-}*/
-
+}
+/**/
 ul {
 	list-style-type: none;
-	padding: 0
+	padding: 0;
+	margin: 0;
 }
 
 a {
@@ -16,11 +16,67 @@ a:hover {
 	text-decoration: none;
 }
 
+.glyphicon {
+	padding-right: 5px !important;
+}
+h3>span {
+	display: inline-block;
+	color: #fff;
+	background-color: #999;
+	width: 225px;
+}
+
+/*--------------Header--------------*/
+
+
+.encabezado h1, .enlaces-encabezado, .enlaces-encabezado>ul li {
+	display: inline-block;
+}
+
+.encabezado h1,.enlaces-encabezado {
+	
+	margin-top: 4%;
+}
 /*--------------Clases generales--------------*/
 .text-negrita {
 	font-weight: bold;
 }
 
+/*--------------columna 1--------------*/
+.dato-articulo li:first-child{
+	font-weight: 	bold;
+	border-right: 2px solid #333;
+}
+
+.columna-1 .nota-02>span {
+	background-color: #000;
+	color: #fff;
+	padding: 3px 30px;
+	margin-right: 25px;
+}
+.columna-1 .nota-02>ul {
+	display: inline-block;
+}
+.columna-1 .nota-02 ul li:first-child {
+	font-weight: bold;
+	border-right: 2px solid #333;
+}
+.columna-1 .referencias li:first-child{
+	width: 30%;
+	font-weight: 	bold;
+}
+/*--------------columna 2--------------*/
+.nota-video {
+	background-color: #ccc;
+}
+.video>img {
+	width: 100%;
+}
+
+.agenda .nota-agenda .agenda-fecha {
+	width: 50px;
+	height: 50px;
+}
 
 /*--------------Footer--------------*/
 footer {
@@ -34,6 +90,7 @@ footer .list-nav {
  	display: block;
  	min-width: 20%;
  	float: left;
-} footer .sublist-nav .glyphicon {
+} 
+footer .sublist-nav .glyphicon {
 	padding-right: 10px; /*revisar*/
 } 
