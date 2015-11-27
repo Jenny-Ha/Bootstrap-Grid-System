@@ -9,25 +9,85 @@ ul {
 }
 
 a {
-	text-decoration: none;	
+	text-decoration: ;
 	color: inherit;
 }
 a:hover {
 	text-decoration: none;
 }
 
-.glyphicon {
-	padding-right: 5px !important;
+h3 {
+	margin-top: 2px;
 }
 h3>span {
 	display: inline-block;
 	color: #fff;
 	background-color: #999;
+	padding: 1%;
 	width: 225px;
+	border: 1px solid #d4d4d4;
+}
+hr {
+	border-bottom: 1px solid #e6e6e6;
+}
+/*--------------Clases generales--------------*/
+.glyphicon {
+	padding-right: 5px !important;
 }
 
-/*--------------Header--------------*/
+.text-negrita {
+	font-weight: bold;
+}
+.text-gris {
+	color: #949494;
+}
 
+.bg-boton {
+	background-color: #e6e6e6;
+}
+.bg-menu-video {
+	background-color: #d4d4d4;
+}
+.bg-foto-fecha {
+	background-color: #a8a8a8;
+}
+.bg-magazine {
+	background-color: #ebebeb;
+}
+
+
+
+/*--------------Header--------------*/
+header .enlaces-encabezado{
+
+}
+header .navbar-default, header .navbar {
+    background-color: transparent;
+    border:none;
+}
+/*color predeterminado de links NO ACTIVOS*/
+	.navbar-default .navbar-nav>li>a {
+    	color: #333;
+    	font-weight: bold;
+    	-webkit-transition: all .25s;
+    	   -moz-transition: all .25s;
+    	    -ms-transition: all .25s;
+    	     -o-transition: all .25s;
+    	        transition: all .25s;
+	}
+
+	.navbar-default .navbar-nav>li>a:hover {
+    	color: #000;
+    	background-color: #e6e6e6;
+    }
+/*efecto sobre links ACTIVOS del menú*/
+	.navbar-default .navbar-nav>.active>a,
+	.navbar-default .navbar-nav>.active>a:focus,
+	.navbar-default .navbar-nav>.active>a:hover {
+    	color: black;
+    	font-weight: bold;
+    	background-color: white;
+	}
 
 .encabezado h1, .enlaces-encabezado, .enlaces-encabezado>ul li {
 	display: inline-block;
@@ -37,47 +97,46 @@ h3>span {
 	
 	margin-top: 4%;
 }
-/*--------------Clases generales--------------*/
-.text-negrita {
-	font-weight: bold;
-}
 
 /*--------------columna 1--------------*/
-.dato-articulo li:first-child{
-	font-weight: 	bold;
+.dato-articulo span:first-child{
+	font-weight: bold;
 	border-right: 2px solid #333;
 }
+.dato-articulo span:nth-child(2){
+	padding-left: 5px;
+}
 
-.columna-1 .nota-02>span {
+.columna-1 .nota-02>.webzone {
 	background-color: #000;
 	color: #fff;
 	padding: 3px 30px;
 	margin-right: 25px;
 }
-.columna-1 .nota-02>ul {
+.columna-1 .nota-02 .dato-articulo {
 	display: inline-block;
 }
-.columna-1 .nota-02 ul li:first-child {
-	font-weight: bold;
-	border-right: 2px solid #333;
-}
+
 .columna-1 .referencias li:first-child{
 	width: 30%;
-	font-weight: 	bold;
+	font-weight: bold;
 }
 /*--------------columna 2--------------*/
-.nota-video {
-	background-color: #ccc;
-}
+
 .video>img {
 	width: 100%;
 }
 
-.agenda .nota-agenda .agenda-fecha {
+/*.agenda .nota-agenda .agenda-fecha {
 	width: 50px;
 	height: 50px;
-}
+}*/
 
+/*--------------columna 3--------------*/
+.magazine.{
+	padding-left: 15px;
+	padding-right: 15px;
+}
 /*--------------Footer--------------*/
 footer {
 	padding: 
@@ -94,3 +153,7 @@ footer .list-nav {
 footer .sublist-nav .glyphicon {
 	padding-right: 10px; /*revisar*/
 } 
+
+span.webzone {
+	display: inline-block;
+}
