@@ -147,9 +147,12 @@ header .navbar-default, header .navbar {
 .columna-3 .lista-Info .sublista-nav {
 	padding-left: 20px;
 }
-.magazine.{
-	padding-left: 15px;
-	padding-right: 15px;
+.columna-3 .magazine {
+	margin-bottom: 10px;
+}
+.columna3 .mas-informacion .nota-Info h4{
+	margin-top: 0px;
+	margin-bottom: 0px;
 }
 /*--------------Footer--------------*/
 footer {
